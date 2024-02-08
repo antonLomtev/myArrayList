@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 
 /**
@@ -84,6 +85,15 @@ public class MyArrayList<T> {
             list[i] = list[i + 1];
         }
         size--;
+    }
+
+    /**
+     * Удаляет все элементы коллекции
+     */
+    public void deleteAll() {
+        for (int i = 0; i < list.length; i++) {
+            list[i] = null;
+        }
     }
 
     /**
